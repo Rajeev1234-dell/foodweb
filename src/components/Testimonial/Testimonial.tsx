@@ -28,8 +28,9 @@ function Testimonial({ testimonial_data }: testimprops) {
             </Link>
           </div>
         </div>
-        {testimonial_data.rating?.map((star) => (
+        {testimonial_data.rating?.map((star, index) => (
           <Image
+            key={index}
             src={star}
             alt=""
             width={100}
