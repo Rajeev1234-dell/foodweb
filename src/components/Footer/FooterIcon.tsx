@@ -10,8 +10,8 @@ interface iconsprops {
 function FooterIcon({ icons }: iconsprops) {
   return (
     <div className="footer-icons">
-      {icons?.map((icon) => (
-        <Link href="/">
+      {icons?.map((icon, index) => (
+        <Link href="/" key={index}>
           <Image
             src={icon}
             width={100}

@@ -41,8 +41,8 @@ function About({ about_data }: aboutprops) {
           <div className="about__details">
             <p className="about__desc">{about_data.desc}</p>
             <ul>
-              {about_data.items?.map((item) => (
-                <li>{item}</li>
+              {about_data.items?.map((item, index) => (
+                <li key={index}>{item}</li>
               ))}
             </ul>
             <div className="about__btn">

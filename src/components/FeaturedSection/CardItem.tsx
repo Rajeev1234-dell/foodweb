@@ -10,7 +10,7 @@ function Carditem({ cards }: cardsprops) {
   return (
     <div className="card">
       {cards?.map((card, index) => (
-        <div className="card__item">
+        <div className="card__item" key={index}>
           <div className="card__image">
             <Image src={card.url} width={100} height={100} alt="" />
           </div>

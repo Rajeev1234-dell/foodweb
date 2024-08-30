@@ -10,12 +10,12 @@ function FooterItem({ items }: itemsprops) {
     <div className="footer_items">
       {items?.map((item, index) => {
         return (
-          <div className="footer_items__links">
+          <div className="footer_items__links" key={index}>
             <h5 className="footer_items__title">{item.title}</h5>
             <ul>
-              {item.links?.map((link) => {
+              {item.links?.map((link, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <Link href={link.link}>{link.label}</Link>
                   </li>
                 );
