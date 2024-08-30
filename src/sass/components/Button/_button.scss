@@ -1,0 +1,26 @@
+@import "../../particles/variables";
+@import "../../particles/mixins";
+
+.btn {
+  padding: 0.625rem 2.313rem;
+  border-radius: 0.5rem;
+
+  &__primary {
+    background-color: $red-color;
+    color: $white-color;
+    @include font-properties(1rem, $font-bold);
+  }
+
+  &__secondary {
+    padding: 0.625rem 3.75rem;
+    background-color: $white-color;
+    color: $red-color;
+    @include font-properties(1rem, $font-bold);
+  }
+
+  @media screen and (max-width: 396px) {
+    &__secondary {
+      padding: 13px 35px;
+    }
+  }
+}

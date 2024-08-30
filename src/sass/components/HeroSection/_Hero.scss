@@ -1,0 +1,46 @@
+@import "../../particles/variables";
+
+.hero {
+  background-size: cover;
+  padding-bottom: 14.313rem;
+  color: $white-color;
+  margin-bottom: 3.125rem;
+
+  &__subheadline {
+    margin-top: 7.313rem;
+  }
+
+  &__content {
+    margin-top: 0.75rem;
+    max-width: 502px;
+  }
+
+  &__title {
+    max-width: 664px;
+  }
+
+  &__desc {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.75rem;
+  }
+
+  &__btn {
+    margin-top: 1.5rem;
+    // margin-bottom: 14.313rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    background-position: 75%;
+    background-size: cover;
+    padding-bottom: 16.5rem;
+    margin-bottom: 50px;
+
+    &__subheadline {
+      margin-top: 5.188rem;
+    }
+
+    &__btn {
+      margin-top: 1.875rem;
+    }
+  }
+}

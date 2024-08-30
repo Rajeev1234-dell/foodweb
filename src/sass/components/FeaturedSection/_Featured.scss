@@ -1,0 +1,10 @@
+.featured {
+  margin-bottom: 152px;
+  &__title {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 50px;
+  }
+}

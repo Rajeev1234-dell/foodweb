@@ -1,0 +1,60 @@
+@import "../../particles/variables";
+@import "../../particles/mixins";
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid $black-color;
+    padding-bottom: 2.375rem;
+  }
+
+  &__logo {
+    width: 4.25rem;
+    height: auto;
+  }
+
+  &__desc {
+    @include font-properties(1rem, $font-regular);
+    margin-top: 1.25rem;
+    color: $muted-green-color;
+  }
+
+  &__content {
+    max-width: 242px;
+  }
+
+  &__subscribe {
+    @include font-properties(1.5rem, $font-bold);
+  }
+
+  &__copy-right {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  &__claim {
+    color: rgba(0, 0, 0, 0.808);
+    @include font-properties(0.75rem, $font-light);
+  }
+
+  @media screen and (max-width: 576px) {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__desc {
+      display: none;
+    }
+
+    &__claim {
+      margin-left: auto;
+      margin-right: auto;
+      // @include font-properties(0.75rem, $font-light);
+    }
+  }
+}

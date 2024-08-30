@@ -1,0 +1,49 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+//import all Paricles Class
+@import "./particles/container";
+@import "./particles/common";
+@import "./particles/typography";
+@import "./particles/variables";
+@import "./particles/mixins";
+
+//Styling for Navbar
+@import "./components/Navbar/Navbar";
+@import "./components/Navbar/NavBarItem";
+@import "./components/Navbar/ResponsiveNav";
+
+//Styling for Button Component
+@import "./components/Button/button";
+
+//Styling for Hero Component
+@import "./components/HeroSection/Hero";
+
+//Styling for Footer Component
+@import "./components/Footer/Footer";
+@import "./components/Footer/FooterItem";
+@import "./components/Footer/FooterInput";
+@import "./components/Footer/FooterIcons";
+@import "./components/Footer/FooterInstructions";
+
+//Styling for Offer Component
+@import "./components/OfferSection/offer";
+
+//Styling for featured Component
+@import "./components/FeaturedSection/Featured";
+@import "./components/FeaturedSection/CardItem";
+
+//Styling for Testimonial
+@import "./components/Testimonial/Testimonial";
+
+//Styling for About Component
+@import "./components/AboutSection/About";

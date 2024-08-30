@@ -1,0 +1,14 @@
+.footer-icons {
+  display: flex;
+  gap: 0.938rem;
+  margin-left: auto;
+
+  &__logo {
+    width: 1.063rem;
+    height: 1.063rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}

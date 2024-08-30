@@ -1,0 +1,48 @@
+@import "../../particles/mixins";
+@import "../../particles/variables";
+
+.footer_items {
+  display: flex;
+  gap: 2.938rem;
+
+  &__title {
+    @include font-properties(1.5rem, $font-bold);
+    color: rgba(0, 0, 0, 0.807);
+  }
+
+  ul {
+    margin-top: 0.75rem;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 0.625rem;
+  }
+
+  a {
+    font-size: 1rem;
+    color: $muted-green-color;
+  }
+
+  @media screen and (max-width: 576px) {
+    gap: 0px;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    &__title {
+      font-size: 0.875rem;
+    }
+
+    a {
+      font-size: 0.625rem;
+    }
+
+    li {
+      margin-bottom: 1.125rem;
+    }
+
+    ul {
+      margin-top: 0.875rem;
+    }
+  }
+}

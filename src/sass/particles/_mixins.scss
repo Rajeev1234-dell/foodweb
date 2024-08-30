@@ -1,0 +1,7 @@
+@import "../particles/variables";
+
+@mixin font-properties($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  //   font-family: $family;
+}

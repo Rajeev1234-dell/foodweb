@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.688rem;
+  padding-bottom: 1.438rem;
+
+  &__logo {
+    max-width: 4.25rem;
+    height: auto;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__cart {
+    width: 20px;
+    height: 20px;
+    margin-right: 1.235rem;
+  }
+
+  &__menu-icon {
+    width: 30px;
+    height: 20px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 0.688rem;
+    padding-bottom: 0.813rem;
+
+    &__button {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+      display: flex;
+    }
+
+    &__logo {
+      max-width: 3.438rem;
+      height: auto;
+    }
+  }
+}

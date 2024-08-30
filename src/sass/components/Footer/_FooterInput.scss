@@ -1,0 +1,50 @@
+@import "../../particles/variables";
+@import "../../particles/mixins";
+
+.form {
+  &__sumbit {
+    background-color: $red-color;
+    // border: 1px solid red;
+    border-radius: 1.25rem;
+    padding: 0.563rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subscribe {
+    @include font-properties(1.5rem, $font-bold);
+  }
+
+  &__email {
+    padding-left: 30px;
+    border: none;
+    background-color: $red-color;
+    color: $white-color;
+    @include font-properties(1rem, $font-regular);
+  }
+
+  ::placeholder {
+    color: $white-color;
+    @include font-properties(1rem, $font-regular);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  &__btn {
+    border-radius: 0.625rem;
+    background-color: $white-color;
+    color: $muted-green-color;
+    @include font-properties(1rem, $font-bold);
+    padding: 8px 12px 7px 9px;
+    border: none;
+    outline: none;
+    // margin-left: 5.813rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
