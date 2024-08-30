@@ -9,6 +9,12 @@
     background-color: $red-color;
     color: $white-color;
     @include font-properties(1rem, $font-bold);
+
+    &:hover {
+      background-color: black;
+      color: red;
+      // border-color: white;
+    }
   }
 
   &__secondary {
@@ -16,6 +22,12 @@
     background-color: $white-color;
     color: $red-color;
     @include font-properties(1rem, $font-bold);
+
+    &:hover {
+      background-color: black;
+      color: $white-color;
+      // border-color: white;
+    }
   }
 
   @media screen and (max-width: 396px) {
